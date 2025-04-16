@@ -54,7 +54,7 @@
       font-weight: bold;
       color: #333;
     }
-    input[type="text"], input[type="submit"] {
+    input[type="text"], button {
       padding: 12px;
       border-radius: 8px;
       font-size: 1em;
@@ -67,13 +67,13 @@
       border-color: #f12711;
       outline: none;
     }
-    input[type="submit"] {
+    button {
       border: none;
       background-color: #681c13;
       color: #fff;
       cursor: pointer;
     }
-    input[type="submit"]:hover {
+   button:hover {
       background-color: #3b3b39;
     }
 
@@ -125,7 +125,7 @@
           <input type="text" id="in2" placeholder="Enter product price" />
           <label for="in3">Enter Stock:</label>
           <input type="text" id="in3" placeholder="Enter stock quantity" />
-          <input type="submit" value="Add Product" />
+          <button onclick="add()">Add product</button>
         </form>
       </div>
 
@@ -141,7 +141,8 @@
           <input type="text" id="ii3" placeholder="Enter product price" />
           <label for="ii4">Enter Stock:</label>
           <input type="text" id="ii4" placeholder="Enter stock quantity" />
-          <input type="submit" value="Update Product" />
+          <button onclick="update()">update product</button>
+
         </form>
       </div>
 
@@ -151,7 +152,8 @@
         <form id="f3">
           <label for="iii1">Enter ID:</label>
           <input type="text" id="iii1" placeholder="Enter product ID" />
-          <input type="submit" value="Delete Product" />
+          <button onclick="del()">Delete product</button>
+         
         </form>
       </div>
     </div>
@@ -161,5 +163,88 @@
     </div>
 
   </div>
+  <script>
+    async function show() {
+      
+      let data=await fetch("https://server-3-ddem.onrender.com/data")
+      let res=await data.json()
+      res.forEach((item) => {
+let con=document.getElementById("d1")
+
+let con1=document.createElement("div")
+con1.className="product-card"
+con1.innerHTML=`
+<h3>productid:${item.id}</h3>
+<p>name:${item.name} </p>
+<p>price:${item.price}</p>
+<p>stock:${item.stock}</p>
+`;
+con.append(con1)
+      })
+      document.body.append(con)
+    }
+    show()
+
+    async function add() {
+      event.preventDefault();
+      const i1=document.getElementById("in4").value;
+    const i2=document.getElementById("in1").value;
+    const i3=document.getElementById("in2").value;
+    const i4=document.getElementById("in3").value;
+
+
+    let obj={
+      id:i1,
+      name:i2,
+      price:i3,
+      stock:i4
+    }
+      let data=await fetch("https://server-3-ddem.onrender.com/data",{
+        method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(obj)
+            })
+
+            location.reload();
+           
+    }
+    
+    async function update() {
+      event.preventDefault();
+      const i1=document.getElementById("ii1").value;
+    const i2=document.getElementById("ii2").value;
+    const i3=document.getElementById("ii3").value;
+    const i4=document.getElementById("ii4").value;
+
+
+    let obj={
+      id:i1,
+      name:i2,
+      price:i3,
+      stock:i4
+    }
+      let data=await fetch(`https://server-3-ddem.onrender.com/data/${i1}`,{
+        method:"PUT",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(obj)
+            })
+            location.reload();
+           
+    }
+
+    async function del(){
+      event.preventDefault();
+let id=document.getElementById("iii1").value
+let data=await fetch(`https://server-3-ddem.onrender.com/data/${id}`,{
+    method:"DELETE"
+})  
+location.reload();
+}
+
+  </script>
 </body>
 </html>
