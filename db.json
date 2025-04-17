@@ -2,14 +2,14 @@
   "data":[
   {
     "id": 1,
-    "title": "Vanilla Late",
+    "title": "Vanilla Latte",
     "price": 5.12,
     "description": "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
     "category": {
       "hot": true,
       "cold": false
     },
-    "image": "https://i.ibb.co/DMYsNyM/cup1.jpg",
+    "image": "https://img.freepik.com/free-psd/delicious-coffee-drink-whipped-cream-chocolate-shavings-glass-cup_632498-49608.jpg?semt=ais_hybrid&w=740",
     "rating": {
       "rate": 4.5
     }
