@@ -1,328 +1,995 @@
 {
-  "data":[
-  {
-    "id": 1,
-    "title": "Vanilla Latte",
-    "price": 5.12,
-    "description": "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
-    "category": {
-      "hot": true,
-      "cold": false
+  "hotBeverages": [
+    // ===== Hot Coffee (6 items) =====
+    {
+      "id": 1,
+      "name": "Black Coffee",
+      "price": "$2.50",
+      "image": "https://weaverscoffee.com/cdn/shop/articles/1_957x.png?v=1568421338",
+      "category": "coffee",
+      "description": "Freshly brewed drip coffee",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "high"
     },
-    "image": "https://w7.pngwing.com/pngs/15/703/png-transparent-ice-cream-latte-milkshake-frappxe9-coffee-flavor-vanilla-latte-frappuccino-cool-cream-food-frozen-dessert-thumbnail.png",
-    "rating": {
-      "rate": 4.5
-    }
-  },
-  {
-    "id": 2,
-    "title": "Cappuccino",
-    "price": 4.3,
-    "description": "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find variations that use cream instead of milk or ones that throw in flavor shot, as well.",
-    "category": {
-      "hot": true,
-      "cold": true
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "price": "$3.95",
+      "image": "https://cdn.webshopapp.com/shops/302994/files/449864078/which-milk-is-best-for-cappuccino.jpg",
+      "category": "coffee",
+      "description": "Espresso with steamed milk and foam",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/bKcqNvG/cup2.jpg",
-    "rating": {
-      "rate": 4.9
-    }
-  },
-  {
-    "id": 3,
-    "title": "Americano",
-    "price": 7,
-    "description": "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water. Pro tip: if you’re making your own, pour the espresso first, then add the hot water.",
-    "category": {
-      "hot": false,
-      "cold": true
+    {
+      "id": 3,
+      "name": "Caramel Latte",
+      "price": "$4.25",
+      "image": "https://bakingmischief.com/wp-content/uploads/2019/10/easy-caramel-latte-image-square.jpg",
+      "category": "coffee",
+      "description": "Espresso with steamed milk and caramel syrup",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/1dH8rHk/cup3.jpg",
-    "rating": {
-      "rate": 4.2
-    }
-  },
-  {
-    "id": 4,
-    "title": "Espresso",
-    "price": 3.6,
-    "description": "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
-    "category": {
-      "hot": false,
-      "cold": true
+    {
+      "id": 4,
+      "name": "Mocha",
+      "price": "$4.50",
+      "image": "https://www.spoonfulofflavor.com/wp-content/uploads/2021/11/mocha-latte-recipe.jpg",
+      "category": "coffee",
+      "description": "Espresso with chocolate and steamed milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/wRF98y0/cup4.jpg",
-    "rating": {
-      "rate": 4.6
-    }
-  },
-  {
-    "id": 5,
-    "title": "Doppio",
-    "price": 4.8,
-    "description": "A double shot of espresso, the doppio is perfect for putting extra pep in your step..",
-    "category": {
-      "hot": true,
-      "cold": true
+    {
+      "id": 5,
+      "name": "Americano",
+      "price": "$3.25",
+      "image": "https://majestycoffee.com/cdn/shop/articles/americano_b74a8154-454b-4f74-9a6c-95fbc4152ed3.jpg?v=1684048195",
+      "category": "coffee",
+      "description": "Espresso shots with hot water",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "high"
     },
-    "image": "https://i.ibb.co/GTyCh3K/cup5.jpg",
-    "rating": {
-      "rate": 4.4
-    }
-  },
-  {
-    "id": 6,
-    "title": "Cortado",
-    "price": 4.1,
-    "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
-    "category": {
-      "hot": true,
-      "cold": false
+    {
+      "id": 6,
+      "name": "Flat White",
+      "price": "$4.00",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg/960px-Flat_white_coffee_with_pretty_feather_pattern.jpg",
+      "category": "coffee",
+      "description": "Ristretto shots with steamed milk",
+      "sizes": ["8oz", "12oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/gzqxYTm/cup13.jpg",
-    "rating": {
-      "rate": 4.5
-    }
-  },
-  {
-    "id": 7,
-    "title": "Red Eye",
-    "price": 4.7,
-    "description": "Named after those pesky midnight flights, a red eye can cure any tiresome morning. A full cup of hot coffee with an espresso shot mixed in, this will definitely get your heart racing.",
-    "category": {
-      "hot": true,
-      "cold": true
+
+    // ===== Hot Tea (5 items) =====
+    {
+      "id": 7,
+      "name": "Earl Grey",
+      "price": "$2.95",
+      "image": "https://www.goldentipstea.in/cdn/shop/articles/clipboard-image_29_1024x.png?v=1720694435",
+      "category": "tea",
+      "description": "Black tea with bergamot orange",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/QvY2r6N/cup8.jpg",
-    "rating": {
-      "rate": 4.8
-    }
-  },
-  {
-    "id": 8,
-    "title": "Galão",
-    "price": 6.1,
-    "description": "Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference is it contains about twice as much foamed milk, making it a lighter drink compared to the other two.",
-    "category": {
-      "hot": true,
-      "cold": false
+    {
+      "id": 8,
+      "name": "Chamomile",
+      "price": "$2.95",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/11/BO/HD/UC/113239071/chamomile-green-tea-500x500.png",
+      "category": "tea",
+      "description": "Soothing herbal tea",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "none"
     },
-    "image": "https://i.ibb.co/5F28sGc/cup9.jpg",
-    "rating": {
-      "rate": 4.8
-    }
-  },
-  {
-    "id": 9,
-    "title": "Lungo",
-    "price": 3.6,
-    "description": "A lungo is a long-pull espresso. The longer the pull, the more caffeine there is and the more ounces you can enjoy.",
-    "category": {
-      "hot": false,
-      "cold": true
+    {
+      "id": 9,
+      "name": "Chai Latte",
+      "price": "$3.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8hdKsM9Y-Cr5httCGP8MP3P6QyGCatBxrw&s",
+      "category": "tea",
+      "description": "Spiced tea with steamed milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "low"
     },
-    "image": "https://i.ibb.co/gR0JLCK/cup10.jpg",
-    "rating": {
-      "rate": 4.3
-    }
-  },
-  {
-    "id": 10,
-    "title": "Macchiato",
-    "price": 5.8,
-    "description": "The macchiato is another espresso-based drink that has a small amount of foam on top. It’s the happy medium between a cappuccino and a doppio.",
-    "category": {
-      "hot": true,
-      "cold": true
+    {
+      "id": 10,
+      "name": "Matcha Latte",
+      "price": "$4.25",
+      "image": "https://munchingwithmariyah.com/wp-content/uploads/2020/06/IMG_0748.jpg",
+      "category": "tea",
+      "description": "Green tea powder with steamed milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
     },
-    "image": "https://i.ibb.co/tKCW7qn/cup11.jpg",
-    "rating": {
-      "rate": 4.6
-    }
-  },
-  {
-    "id": 11,
-    "title": "Mocha",
-    "price": 4.7,
-    "description": "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
-    "category": {
-      "hot": true,
-      "cold": false
+    {
+      "id": 11,
+      "name": "Peppermint Tea",
+      "price": "$2.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9RoRyvxR84x_sxLbg1f_JzZNTypZFs94r5A&s",
+      "category": "tea",
+      "description": "Refreshing herbal infusion",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "none"
     },
-    "image": "https://i.ibb.co/z4HSK85/cup12.jpg",
-    "rating": {
-      "rate": 4.4
-    }
-  },
-  {
-    "id": 12,
-    "title": "Ristretto",
-    "price": 5.2,
-    "description": "Ristretto is an espresso shot. It uses less hot water which creates a sweeter flavor compared to the bitter taste of a traditional shot of espresso or a doppio.",
-    "category": {
-      "hot": false,
-      "cold": true
+
+    // ===== Hot Chocolate (3 items) =====
+    {
+      "id": 12,
+      "name": "Classic Hot Chocolate",
+      "price": "$3.50",
+      "image": "https://www.dysphagiacare.ca/sites/g/files/lpfasj961/files/2024-01/CLASSIC-HOT-CHOCOLATE-073.png",
+      "category": "hot-chocolate",
+      "description": "Rich chocolate with steamed milk",
+      "sizes": ["12oz", "16oz"]
     },
-    "image": "https://i.ibb.co/gD19GnN/cup20.jpg",
-    "rating": {
-      "rate": 3.9
-    }
-  },
-  {
-    "id": 13,
-    "title": "Flat White",
-    "price": 5.8,
-    "description": "This Aussie-born drink is basically a cappuccino without the foam or chocolate sprinkle. It’s an espresso drink with steamed milk.",
-    "category": {
-      "hot": true,
-      "cold": true
+    {
+      "id": 13,
+      "name": "White Hot Chocolate",
+      "price": "$3.75",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/White-hot-chocolate-458ccfd.jpg?quality=90&resize=556,505",
+      "category": "hot-chocolate",
+      "description": "Creamy white chocolate version",
+      "sizes": ["12oz", "16oz"]
     },
-    "image": "https://i.ibb.co/GRLrJMY/cup14.jpg",
-    "rating": {
-      "rate": 4.9
-    }
-  },
-  {
-    "id": 14,
-    "title": "Affogato",
-    "price": 4.8,
-    "description": "The affogato is an excuse to enjoy a scoop of ice cream any time of day (and any time of year in my opinion). Served with a scoop of ice cream and a shot of espresso, or two. The affogato is extra delish served over a brownie.",
-    "category": {
-      "hot": true,
-      "cold": true
+    {
+      "id": 14,
+      "name": "Spiced Mexican Hot Chocolate",
+      "price": "$4.00",
+      "https://www.theendlessmeal.com/wp-content/uploads/2023/11/spicy-hot-chocolate-2-500x500.jpg",
+      "category": "hot-chocolate",
+      "description": "With cinnamon and chili powder",
+      "sizes": ["12oz"]
     },
-    "image": "https://i.ibb.co/K29n6ms/cup15.jpg",
-    "rating": {
-      "rate": 4.1
-    }
-  },
-  {
-    "id": 15,
-    "title": "Café au Lait",
-    "price": 3.65,
-    "description": "Café au lait is perfect for the coffee minimalist who wants a bit more flavor. Just add a splash of warm milk to your coffee and you’re all set!",
-    "category": {
-      "hot": true,
-      "cold": false
+
+    // ===== Specialty Drinks (3 items) =====
+    {
+      "id": 15,
+      "name": "Golden Milk",
+      "price": "$4.50",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCTF2Ox-_JvPUmP3uxaWib5LXc7W9jcIwA5g&s",
+      "category": "specialty",
+      "description": "Turmeric with warm milk and spices",
+      "sizes": ["12oz"]
     },
-    "image": "https://i.ibb.co/ns4jjfL/cup16.jpg",
-    "rating": {
-      "rate": 4.8
-    }
-  },
-  {
-    "id": 16,
-    "title": "Frappuccino",
-    "price": 7.2,
-    "description": "Made famous by Starbucks, the Frappuccino is a blended iced coffee drink that’s topped with whipped cream and syrup. But not all Frapps are made the same: watch out for coffee-free versions. Unless you’re into that sorta thing.",
-    "category": {
-      "hot": false,
-      "cold": true
+    {
+      "id": 16,
+      "name": "Butter Coffee",
+      "price": "$4.75",
+      "image": "https://static.toiimg.com/thumb/81907596.cms?imgsize=308893&width=800&height=800",
+      "category": "specialty",
+      "description": "Coffee with grass-fed butter and MCT oil",
+      "sizes": ["12oz"],
+      "caffeine": "high"
     },
-    "image": "https://i.ibb.co/sCR4R9S/cup17.jpg",
-    "rating": {
-      "rate": 4.9
-    }
-  },
-  {
-    "id": 17,
-    "title": "Nitro",
-    "price": 6.38,
-    "description": "A cold brew + nitrogen bubbles = a cold brew coffee with a frothy, Guinness-like consistency. (It’s poured via a nitro tap, too.)",
-    "category": {
-      "hot": false,
-      "cold": true
+    {
+      "id": 17,
+      "name": "Mulled Wine",
+      "price": "$6.50",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0WzPKnb36fJrOeyEmnWDbbYN2CMCa884W0A&s",
+      "category": "specialty",
+      "description": "Spiced red wine served warm",
+      "sizes": ["8oz"],
+      "alcoholic": true
     },
-    "image": "https://i.ibb.co/tXK8Phg/cup18.jpg",
-    "rating": {
-      "rate": 4.5
-    }
-  },
-  {
-    "id": 18,
-    "title": "Cold Brew",
-    "price": 5.5,
-    "description": "The trendiest of the iced coffee bunch, cold brew coffees are made by steeping coffee beans from anywhere between 6-36 hours, depending on how strong you would like your cold brew. Once the beans are done steeping, add cold milk or cream.",
-    "category": {
-      "hot": false,
-      "cold": true
+
+    // ===== Seasonal (3 items) =====
+    {
+      "id": 18,
+      "name": "Pumpkin Spice Latte",
+      "price": "$4.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9KYeh0tNte5wbi6ZTkwM0rJyX0MZqpX5iw&s",
+      "category": "seasonal",
+      "description": "Espresso with pumpkin spice and steamed milk",
+      "sizes": ["12oz", "16oz"],
+      "season": "fall"
     },
-    "image": "https://i.ibb.co/tq4X4V9/cup19.jpg",
-    "rating": {
-      "rate": 4.8
-    }
-  },
     {
       "id": 19,
-      "title": "Black Coffee",
-      "price": 1.5,
-      "description":  "A simple, bold brew made without milk or sugar. It's rich, aromatic, and perfect for those who enjoy a pure coffee flavor.",
-      "category": {
-        "hot": true,
-        "cold": false
-      },
-      "image": "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "rating": {
-        "rate": 4.8
-      }
-  },
-  {
+      "name": "Peppermint Mocha",
+      "price": "$4.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBjpXNl7oT4reND92YJVIhwlNlfoZYvkGtA&s",
+      "category": "seasonal",
+      "description": "Chocolate, espresso, and peppermint syrup",
+      "sizes": ["12oz", "16oz"],
+      "season": "winter"
+    },
+    {
       "id": 20,
-      "title": "Caramel Latte",
-      "price": 2,
-      "description":  "A rich espresso drink blended with steamed milk and sweet caramel syrup. It's smooth, creamy, and topped with a light foam for a perfect balance of sweetness.",
-      "category": {
-        "hot": true,
-        "cold": false
+      "name": "Eggnog Latte",
+      "price": "$4.75",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPP7AoKYJoZLXgshH4MKW0LdNnphvvx0I-4w&s",
+      "category": "seasonal",
+      "description": "Espresso with steamed eggnog",
+      "sizes": ["12oz"],
+      "season": "winter"
+    }
+  ],
+"refreshments":[
+       // ===== Cold Drinks (5 items) =====
+       {
+        "id": 1,
+        "name": "Sparkling Water",
+        "price": "$2.00",
+        "image": "https://www.hotelierindia.com/cloud/2022/06/08/is-sparkling-water-good-or-bad-for-you-alt-1440x810-1.jpg",
+        "category": "cold-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["plain"]
       },
-      "image": "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "rating": {
-        "rate": 4.8
-      }
-  },
-  {
-      "id": 22,
-      "title": "Chai Latte",
-      "price": 3,
-      "description":  "A warm, spiced blend of black tea, steamed milk, and aromatic spices like cinnamon and cardamom. It’s creamy, comforting, and perfect for a cozy treat.",
-      "category": {
-        "hot": true,
-        "cold": false
+      {
+        "id": 2,
+        "name": "Iced Tea (Lemon)",
+        "price": "$2.50",
+        "image": "https://static.toiimg.com/thumb/84339280.cms?imgsize=327880&width=800&height=800",
+        "category": "cold-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["lemon", "refreshing"]
       },
-      "image": "https://www.teaheritage.fr/cdn/shop/articles/fbfd23eb1812c26fe623eebd7b4a5249.jpg?v=1674638932",
-      "rating": {
-        "rate": 4.7
-      }
-  },
-  {
-      "id": 23,
-      "title": "Matcha Latte",
-      "price": 5,
-      "description":   "A smooth, earthy drink made with finely ground green tea powder and steamed milk. It’s rich in antioxidants and offers a naturally sweet, slightly grassy flavor.",
-      "category": {
-        "hot": true,
-        "cold": false
+      {
+        "id": 3,
+        "name": "Fresh Orange Juice",
+        "price": "$3.75",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_k3dmXxGhAIYtpo1VDWy8SJi30wQqJ5J9Ig&s",
+        "category": "cold-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["citrus", "sweet"]
       },
-      "image": "https://images.pexels.com/photos/28704749/pexels-photo-28704749/free-photo-of-cozy-matcha-latte-with-autumn-decor-on-rustic-table.jpeg",
-      "rating": {
-        "rate": 4.8
-      }
-  },
-  {
-      "id": 24,
-      "title": "Latte",
-      "price": 1.3,
-      "description":  "A smooth espresso-based drink with steamed milk and a light layer of foam. It’s creamy, mildly sweet, and perfect for a balanced coffee experience.",
-      "category": {
-        "hot": true,
-        "cold": false
+      {
+        "id": 4,
+        "name": "Virgin Mojito",
+        "price": "$4.25",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgc2qoTr6OMMFzqSC9zKtMs6WM-LWzdFzyLw&s",
+        "category": "cold-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["mint", "lime"]
       },
-      "image": "https://i.imgur.com/L3r6o58.jpeg",
-      "rating": {
-        "rate": 5
+      {
+        "id": 5,
+        "name": "Soda (Cola)",
+        "price": "$2.25",
+        "image": "https://static.wixstatic.com/media/0c3f6e_233e78dc840b4c55b3a1ef22dcf049cd~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/0c3f6e_233e78dc840b4c55b3a1ef22dcf049cd~mv2.jpg",
+        "category": "cold-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["sweet", "carbonated"]
+      },
+  
+      // ===== Hot Drinks (5 items) =====
+      {
+        "id": 6,
+        "name": "Hot Chocolate",
+        "price": "$3.50",
+        "image": "https://www.sharmispassions.com/wp-content/uploads/2021/04/hot-chocolate-recipe4.jpg",
+        "category": "hot-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["chocolate", "creamy"]
+      },
+      {
+        "id": 7,
+        "name": "Herbal Tea Selection",
+        "price": "$2.75",
+        "image": "https://static.toiimg.com/photo/69385334.cms",
+        "category": "hot-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["varied"]
+      },
+      {
+        "id": 8,
+        "name": "Spiced Apple Cider",
+        "price": "$3.25",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDxldL11dxsl8wJtNS1CEkjkVD4PMsrkiAg&s",
+        "category": "hot-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["apple", "cinnamon"]
+      },
+      {
+        "id": 9,
+        "name": "Matcha Latte",
+        "price": "$4.50",
+        "image": "https://www.gimmesomeoven.com/wp-content/uploads/2023/12/Matcha-Latte-Recipe-7.jpg",
+        "category": "hot-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["grassy", "creamy"]
+      },
+      {
+        "id": 10,
+        "name": "Golden Milk (Turmeric)",
+        "price": "$4.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkoaxrYa5iprU24nQZxlN3hxIOPnMGgpZAw&s",
+        "category": "hot-drinks",
+        "type": "non-alcoholic",
+        "flavor": ["spiced", "earthy"]
+      },
+  
+      // ===== Smoothies (5 items) =====
+      {
+        "id": 11,
+        "name": "Berry Blast Smoothie",
+        "price": "$5.25",
+        "image": "https://my-bmi.co.uk/wp-content/uploads/2024/03/Untitled-design-15.jpg",
+        "category": "smoothies",
+        "type": "non-alcoholic",
+        "flavor": ["mixed-berry", "sweet"]
+      },
+      {
+        "id": 12,
+        "name": "Tropical Mango Smoothie",
+        "price": "$5.50",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReNDsNtoLQsbvM4RlRCsUb1BHVn_TNDbb_oQ&s",
+        "category": "smoothies",
+        "type": "non-alcoholic",
+        "flavor": ["mango", "pineapple"]
+      },
+      {
+        "id": 13,
+        "name": "Green Detox Smoothie",
+        "price": "$5.75",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzd_slbi_IZmQIuyZXfOuor4yh-pv0VYiFWw&s",
+        "category": "smoothies",
+        "type": "non-alcoholic",
+        "flavor": ["kale", "ginger"]
+      },
+      {
+        "id": 14,
+        "name": "Peanut Butter Banana Smoothie",
+        "price": "$5.25",
+        "image": "https://www.wellplated.com/wp-content/uploads/2020/12/Peanut-Butter-Banana-Smoothie-recipe.jpg",
+        "category": "smoothies",
+        "type": "non-alcoholic",
+        "flavor": ["peanut-butter", "banana"]
+      },
+      {
+        "id": 15,
+        "name": "Acai Bowl",
+        "price": "$6.50",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIXIFkpUF7JXS_uxqphIP9BY4gpVPcNRJ0A&s",
+        "category": "smoothies",
+        "type": "non-alcoholic",
+        "flavor": ["acai", "berry"]
+      },
+  
+      // ===== Alcoholic Beverages (5 items) =====
+      {
+        "id": 16,
+        "name": "Craft Beer (Local)",
+        "price": "$6.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmyZbUljuEyYxeuEZ-f_tePdvBi1ZC_nzPWw&s",
+        "category": "alcoholic",
+        "type": "beer",
+        "flavor": ["hoppy"]
+      },
+      {
+        "id": 17,
+        "name": "House Wine (Glass)",
+        "price": "$7.50",
+        "image": "https://www.ocean-glassware.com/wp-content/uploads/2020/05/house-wine-5.jpg",
+        "category": "alcoholic",
+        "type": "wine",
+        "flavor": ["red" or "white"]
+      },
+      {
+        "id": 18,
+        "name": "Classic Mojito",
+        "price": "$8.50",
+        "image": "https://www.southernliving.com/thmb/CCkIxLWfRaSAvcKBslSCsFcrW4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Southern-Living-Mojito_009-65dc860743344068b5e5cab5efc85ebd.jpg",
+        "category": "alcoholic",
+        "type": "cocktail",
+        "flavor": ["mint", "lime"]
+      },
+      {
+        "id": 19,
+        "name": "Aperol Spritz",
+        "price": "$9.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqME08fUjnRP7nNj7pW0-fvZTQBUQL1HmN1g&s",
+        "category": "alcoholic",
+        "type": "cocktail",
+        "flavor": ["citrus", "bittersweet"]
+      },
+      {
+        "id": 20,
+        "name": "Whiskey Sour",
+        "price": "$10.00",
+        "image": "https://assets.bonappetit.com/photos/63a4b2aba1a7b40ea0bebd03/1:1/w_1727,h_1727,c_limit/WhiskeySour.jpeg",
+        "category": "alcoholic",
+        "type": "cocktail",
+        "flavor": ["whiskey", "lemon"]
       }
-  }
+],
+"desserts" : [
+      // ===== Cakes (5 items) =====
+   {
+       "id": 1,
+       "name": "Chocolate Fudge Cake",
+       "price": "$6.99",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMF89RKIywPmyHzrwe3ljQhHziJqQG0WfW_A&s",
+       "category": "cakes",
+       "type": "baked",
+       "flavor": ["chocolate"]
+     },
+     {
+       "id": 2,
+       "name": "Strawberry Cheesecake",
+       "price": "$7.50",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQegJz2mBXzDtuKb7qLIkeecKj5oUUEWgiKfQ&s",
+       "category": "cakes",
+       "type": "chilled",
+       "flavor": ["fruit", "cream"]
+     },
+     {
+       "id": 3,
+       "name": "Red Velvet Cake",
+       "price": "$6.75",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkTmpMICYfHBrVchOLExy2oizgEJYktKYNg&s",
+       "category": "cakes",
+       "type": "baked",
+       "flavor": ["vanilla", "chocolate"]
+     },
+     {
+       "id": 4,
+       "name": "Lemon Drizzle Cake",
+       "price": "$5.95",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQCbOP7ld49AHnwKhyInmB6w1DhjVwp00PQ&s",
+       "category": "cakes",
+       "type": "baked",
+       "flavor": ["citrus"]
+     },
+     {
+       "id": 5,
+       "name": "Black Forest Gateau",
+       "price": "$8.25",
+       "image": "https://recipesblob.oetker.co.uk/assets/6449b4e3bbe44b00b20ffb278a207957/750x910/mini-black-forest-gateau.jpg",
+       "category": "cakes",
+       "type": "baked",
+       "flavor": ["chocolate", "cherry"]
+     },
  
-]
+     // ===== Pastries (5 items) =====
+     {
+       "id": 6,
+       "name": "Butter Croissant",
+       "price": "$2.95",
+       "image": "https://theobroma.in/cdn/shop/files/Croissant01.jpg?v=1710838794",
+       "category": "pastries",
+       "type": "baked",
+       "flavor": ["buttery"]
+     },
+     {
+       "id": 7,
+       "name": "Apple Turnover",
+       "price": "$3.50",
+       "image": "https://www.recipetineats.com/tachyon/2023/08/Apple-turnovers_8-1.jpg",
+       "category": "pastries",
+       "type": "baked",
+       "flavor": ["fruit"]
+     },
+     {
+       "id": 8,
+       "name": "Pain au Chocolat",
+       "price": "$3.25",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Pain_au_chocolat_Luc_Viatour.jpg/800px-Pain_au_chocolat_Luc_Viatour.jpg",
+       "category": "pastries",
+       "type": "baked",
+       "flavor": ["chocolate"]
+     },
+     {
+       "id": 9,
+       "name": "Raspberry Danish",
+       "price": "$3.75",
+       "image": "https://www.marcellinaincucina.com/wp-content/uploads/2022/07/raspberry-danish-featured.jpg",
+       "category": "pastries",
+       "type": "baked",
+       "flavor": ["fruit"]
+     },
+     {
+       "id": 10,
+       "name": "Cinnamon Roll",
+       "price": "$3.95",
+       "image": "https://horizon.com/wp-content/uploads/recipe-cin-roll-hero.jpg",
+       "category": "pastries",
+       "type": "baked",
+       "flavor": ["cinnamon"]
+     },
+ 
+     // ===== Cookies (5 items) =====
+     {
+       "id": 11,
+       "name": "Chocolate Chip Cookies",
+       "price": "$2.50",
+       "image": "https://cdn.loveandlemons.com/wp-content/uploads/2024/08/chocolate-chip-cookie-recipe.jpg",
+       "category": "cookies",
+       "type": "baked",
+       "flavor": ["chocolate"]
+     },
+     {
+       "id": 12,
+       "name": "Macarons (Assorted)",
+       "price": "$8.00",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFruu1INfMDp8ZmtFS_v0QK2kqL49li5HfKQ&s",
+       "category": "cookies",
+       "type": "baked",
+       "flavor": ["fruit", "vanilla"]
+     },
+     {
+       "id": 13,
+       "name": "Oatmeal Raisin Cookies",
+       "price": "$2.95",
+       "image": "https://www.rainbownourishments.com/wp-content/uploads/2023/08/vegan-oatmeal-raisin-cookies-1.jpg",
+       "category": "cookies",
+       "type": "baked",
+       "flavor": ["fruit"]
+     },
+     {
+       "id": 14,
+       "name": "Shortbread Cookies",
+       "price": "$3.25",
+       "image": "https://www.allrecipes.com/thmb/CJOX58HEUV1VDdO8NRvFLP--Hnk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/10269-shortbread-cookies-ii-ddmfs-beauty-3x4-a49d3dc16dd747bcb4b28a6a3fa14a58.jpg",
+       "category": "cookies",
+       "type": "baked",
+       "flavor": ["buttery"]
+     },
+     {
+       "id": 15,
+       "name": "Double Chocolate Cookies",
+       "price": "$3.50",
+       "image": "https://sugargeekshow.com/wp-content/uploads/2021/12/double_chocolate_chip_cookies-3-1.jpg",
+       "category": "cookies",
+       "type": "baked",
+       "flavor": ["chocolate"]
+     },
+ 
+     // ===== Ice Cream (5 items) =====
+     {
+       "id": 16,
+       "name": "Vanilla Bean Ice Cream",
+       "price": "$4.25",
+       "image": "https://sugarpursuit.com/wp-content/uploads/2023/05/Vanilla-bean-ice-cream-thumbnail.jpg",
+       "category": "ice-cream",
+       "type": "frozen",
+       "flavor": ["vanilla"]
+     },
+     {
+       "id": 17,
+       "name": "Mint Chocolate Chip",
+       "price": "$4.50",
+       "image": "https://www.whitakerschocolates.com/cdn/shop/articles/Who-Invented-Mint-Chocolate-Chip-Ice-Cream1.jpg?v=1715958834",
+       "category": "ice-cream",
+       "type": "frozen",
+       "flavor": ["mint", "chocolate"]
+     },
+     {
+       "id": 18,
+       "name": "Strawberry Sorbet",
+       "price": "$4.00",
+       "image": "https://static01.nyt.com/images/2016/05/28/dining/28COOKING-STRAWBERRY-SORBET1/28COOKING-STRAWBERRY-SORBET1-superJumbo.jpg",
+       "category": "ice-cream",
+       "type": "frozen",
+       "flavor": ["fruit"]
+     },
+     {
+       "id": 19,
+       "name": "Cookies & Cream",
+       "price": "$4.75",
+       "image": "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2022-05/cookies-and-cream-ice-cream_0422.jpg?itok=-gxLG1uG",
+       "category": "ice-cream",
+       "type": "frozen",
+       "flavor": ["vanilla", "chocolate"]
+     },
+     {
+       "id": 20,
+       "name": "Pistachio Gelato",
+       "price": "$5.25",
+       "image": "https://www.recipesfromitaly.com/wp-content/uploads/2024/04/pistachio-gelato-recipe-1200x1200-1.jpg",
+       "category": "ice-cream",
+       "type": "frozen",
+       "flavor": ["nutty"]
+     },
+ 
+     // ===== Chocolate (5 items) =====
+     {
+       "id": 21,
+       "name": "Dark Chocolate Truffles",
+       "price": "$9.50",
+       "image": "https://www.happyfoodstube.com/wp-content/uploads/2016/12/dark-chocolate-truffles-6.jpg",
+       "category": "chocolate",
+       "type": "candy",
+       "flavor": ["chocolate"]
+     },
+     {
+       "id": 22,
+       "name": "Chocolate Covered Strawberries",
+       "price": "$7.25",
+       "image": "https://www.joyousapron.com/wp-content/uploads/2023/02/valentines-chocolate-covered-strawberries-sq.jpg",
+       "category": "chocolate",
+       "type": "fresh",
+       "flavor": ["chocolate", "fruit"]
+     },
+     {
+       "id": 23,
+       "name": "Hazelnut Pralines",
+       "price": "$8.75",
+       "image": "https://www.theculinaryjumble.com/wp-content/uploads/2015/09/Spectacular-Five-Minute-Hazelnut-Praline-with-just-two-ingredients.jpg",
+       "category": "chocolate",
+       "type": "candy",
+       "flavor": ["chocolate", "nut"]
+     },
+     {
+       "id": 24,
+       "name": "White Chocolate Bark",
+       "price": "$6.50",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJ0-oc1dQfHEFC_Lbh9Xiqae0VwVVe2Pppw&s",
+       "category": "chocolate",
+       "type": "candy",
+       "flavor": ["vanilla"]
+     },
+     {
+       "id": 25,
+       "name": "Salted Caramel Bonbons",
+       "price": "$8.00",
+       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv5cj0r1aKIZ7QE4_X2A93-6e5dZkQr4hKBQ&s",
+       "category": "chocolate",
+       "type": "candy",
+       "flavor": ["caramel", "chocolate"]
+     }
+   ],
+   "coldBeverages": [
+    // ===== Coffee (5 items) =====
+    {
+      "id": 1,
+      "name": "Iced Americano",
+      "price": "$3.50",
+      "image": "https://mocktail.net/wp-content/uploads/2022/03/homemade-Iced-Americano-recipe_1ig.jpg",
+      "category": "coffee",
+      "description": "Double espresso over ice with cold water",
+      "sizes": ["12oz", "16oz", "20oz"],
+      "caffeine": "high"
+    },
+    {
+      "id": 2,
+      "name": "Cold Brew",
+      "price": "$4.25",
+      "image": "https://lifemadesweeter.com/wp-content/uploads/Easy-Cold-Brew-Coffee-Recipe-Vegan-Dairy-Free-Paleo-Healthy.jpg",
+      "category": "coffee",
+      "description": "Slow-steeped for 18 hours, served over ice",
+      "sizes": ["16oz", "20oz"],
+      "caffeine": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Iced Caramel Macchiato",
+      "price": "$4.95",
+      "image": "https://gatherforbread.com/wp-content/uploads/2017/04/Iced-Caramel-Macchiato-16-683x1024-1.jpg",
+      "category": "coffee",
+      "description": "Vanilla syrup, milk, espresso, and caramel drizzle",
+      "sizes": ["12oz", "16oz", "20oz"],
+      "caffeine": "medium"
+    },
+    {
+      "id": 4,
+      "name": "Nitro Cold Brew",
+      "price": "$5.25",
+      "image": "https://thebigmansworld.com/wp-content/uploads/2025/01/nitro-cold-brew3.jpg",
+      "category": "coffee",
+      "description": "Cascading cold brew infused with nitrogen",
+      "sizes": ["16oz"],
+      "caffeine": "high"
+    },
+    {
+      "id": 5,
+      "name": "Iced Mocha",
+      "price": "$4.75",
+      "image": "https://bakingmischief.com/wp-content/uploads/2019/05/iced-mocha-image-square.jpg",
+      "category": "coffee",
+      "description": "Espresso, chocolate syrup, and cold milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "medium"
+    },
+
+    // ===== Tea (5 items) =====
+    {
+      "id": 6,
+      "name": "Iced Matcha Latte",
+      "price": "$4.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZtWXO4dq5pQmhUUNKv7f5W-ApXc__OVGC4w&s",
+      "category": "tea",
+      "description": "Ceremonial grade matcha with milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "low"
+    },
+    {
+      "id": 7,
+      "name": "Peach Iced Tea",
+      "price": "$3.25",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/2/2023/03/Peach-iced-tea-197aa60.jpg",
+      "category": "tea",
+      "description": "Black tea infused with peach flavor",
+      "sizes": ["16oz", "24oz"],
+      "caffeine": "medium"
+    },
+    {
+      "id": 8,
+      "name": "Iced Chai Latte",
+      "price": "$4.50",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc__5LYog-MdH2OfpS6qMJ0DIz3kZ1k5VV9Q&s",
+      "category": "tea",
+      "description": "Spiced chai concentrate with milk",
+      "sizes": ["12oz", "16oz"],
+      "caffeine": "low"
+    },
+    {
+      "id": 9,
+      "name": "Hibiscus Iced Tea",
+      "price": "$3.75",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9xOg9Zmag9piPHAFazdnVV3yHfkIJ47v6A&s",
+      "category": "tea",
+      "description": "Tart and floral herbal infusion",
+      "sizes": ["16oz"],
+      "caffeine": "none"
+    },
+    {
+      "id": 10,
+      "name": "Bubble Tea",
+      "price": "$5.50",
+      "image": "https://images.slurrp.com/prod/recipe_images/transcribe/beverage/Bubble-Milk-Tea.webp?impolicy=slurrp-20210601&width=1200&height=675",
+      "category": "tea",
+      "description": "Milk tea with chewy tapioca pearls",
+      "sizes": ["16oz"],
+      "flavors": ["original", "taro", "brown sugar"]
+    },
+
+    // ===== Juice (4 items) =====
+    {
+      "id": 11,
+      "name": "Fresh Orange Juice",
+      "price": "$4.25",
+      "image": "https://www.knowyourproduce.com/wp-content/uploads/2014/04/fresh-squeezed-orange-juice-6.jpg",
+      "category": "juice",
+      "description": "Cold-pressed Florida oranges",
+      "sizes": ["12oz", "16oz"]
+    },
+    {
+      "id": 12,
+      "name": "Watermelon Cooler",
+      "price": "$4.50",
+      "image": "https://c.ndtvimg.com/2022-05/st9sqiog_watermelon-cooler_120x90_10_May_22.jpeg",
+      "category": "juice",
+      "description": "Fresh watermelon with lime juice",
+      "sizes": ["16oz"]
+    },
+    {
+      "id": 13,
+      "name": "Green Detox Juice",
+      "price": "$5.75",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmS7gSHrjm_CEqLCWdLmuDXpz1zPbVGBPxA&s",
+      "category": "juice",
+      "description": "Kale, cucumber, apple, and lemon",
+      "sizes": ["12oz", "16oz"]
+    },
+    {
+      "id": 14,
+      "name": "Tropical Smoothie",
+      "price": "$5.95",
+      "image": "https://www.jessicagavin.com/wp-content/uploads/2020/06/tropical-smoothie-5-1200.jpg",
+      "category": "juice",
+      "description": "Mango, pineapple, and coconut milk",
+      "sizes": ["16oz"]
+    },
+
+    // ===== Soda/Fizzy (3 items) =====
+    {
+      "id": 15,
+      "name": "Craft Cola",
+      "price": "$3.50",
+      "image":"https://soranews24.com/wp-content/uploads/sites/3/2020/10/Craft-cola-recipe-easy-how-to-make-drinks-Japanese-news-1.jpg",
+      "category": "soda",
+      "description": "Small-batch cola with cane sugar",
+      "sizes": ["12oz"]
+    },
+    {
+      "id": 16,
+      "name": "Sparkling Lemonade",
+      "price": "$3.95",
+      "image": "https://www.acouplecooks.com/wp-content/uploads/2021/02/Sparkling-Lemonade-004.jpg",
+      "category": "soda",
+      "description": "Carbonated lemonade with mint",
+      "sizes": ["16oz"]
+    },
+    {
+      "id": 17,
+      "name": "Ginger Beer",
+      "price": "$4.25",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrgp1e0WMRgdM0rDxnkJNFzc8-2KGk4qYUBw&s",
+      "category": "soda",
+      "description": "Spicy non-alcoholic ginger brew",
+      "sizes": ["12oz"]
+    },
+
+    // ===== Specialty (3 items) =====
+    {
+      "id": 18,
+      "name": "Horchata",
+      "price": "$4.50",
+      "image": "https://www.isabeleats.com/wp-content/uploads/2024/05/horchata-24-small-6.jpg",
+      "category": "specialty",
+      "description": "Traditional rice milk with cinnamon",
+      "sizes": ["16oz"]
+    },
+    {
+      "id": 19,
+      "name": "Thai Iced Tea",
+      "price": "$4.75",
+      "image": "https://cinnamonsnail.com/wp-content/uploads/2024/01/Thai-Iced-Tea.jpg",
+      "category": "specialty",
+      "description": "Strong tea with condensed milk",
+      "sizes": ["16oz"]
+    },
+    {
+      "id": 20,
+      "name": "Avocado Smoothie",
+      "price": "$5.95",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DQUkHxol04bc9ylCke48xWRmtJhyhQhBaA&s",
+      "category": "specialty",
+      "description": "Creamy avocado with sweetened milk",
+      "sizes": ["16oz"]
+    }
+  ],
+  "burgerFriesMenu": [
+        // ===== Specialty Burgers (5 items) =====
+    {
+      "id": 6,
+      "name": "Avocado Turkey Burger",
+      "price": "$10.49",
+      "image": "https://thewoodenskillet.com/wp-content/uploads/2022/05/avocado-turkey-burger-recipe-1.jpg",
+      "category": "specialty-burgers",
+      "type": "turkey",
+      "toppings": ["avocado", "pepper jack", "sprouts"],
+      "combo": true
+    },
+    {
+      "id": 7,
+      "name": "Veggie Burger",
+      "price": "$9.99",
+      "image": "https://www.inspiredtaste.net/wp-content/uploads/2018/05/Homemade-Mushroom-Veggie-Burger-Recipe-1200.jpg",
+      "category": "specialty-burgers",
+      "type": "vegetarian",
+      "toppings": ["veggie patty", "avocado", "lettuce", "tomato"],
+      "combo": true
+    },
+    {
+      "id": 8,
+      "name": "Chicken Burger",
+      "price": "$9.29",
+      "image": "https://simplehomeedit.com/wp-content/uploads/2022/09/Southern-Fried-Chicken-Burger-1.webp",
+      "category": "specialty-burgers",
+      "type": "chicken",
+      "toppings": ["grilled chicken", "lettuce", "tomato", "mayo"],
+      "combo": true
+    },
+    {
+      "id": 9,
+      "name": "Spicy Jalapeño Burger",
+      "price": "$10.25",
+      "image": "https://www.chilitochoc.com/wp-content/uploads/2022/10/the-ultimate-cheeseburger-with-pickled-jalapenos-1.jpg",
+      "category": "specialty-burgers",
+      "type": "beef",
+      "toppings": ["jalapeños", "pepper jack", "spicy aioli"],
+      "combo": true
+    },
+    {
+      "id": 10,
+      "name": "Breakfast Burger",
+      "price": "$11.49",
+      "image": "https://www.incredibleegg.org/wp-content/uploads/2020/06/d-fs-breakfast-burger-2100x963-1.jpeg",
+      "category": "specialty-burgers",
+      "type": "beef",
+      "toppings": ["fried egg", "bacon", "hash brown"],
+      "combo": false
+    },
+
+    // ===== French Fries (5 items) =====
+    {
+      "id": 11,
+      "name": "Classic Fries",
+      "price": "$3.99",
+      "image": "https://cdn.zeptonow.com/production/tr:w-640,ar-4672-4672,pr-true,f-auto,q-80/cms/product_variant/bdc31cd4-eef0-42cb-9cc6-c33fc643ab8b.jpeg",
+      "category": "fries",
+      "type": "regular",
+      "size": "medium",
+      "seasoning": "salted"
+    },
+    {
+      "id": 12,
+      "name": "Cheese Fries",
+      "price": "$5.99",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_rJJJ7jnVYbiii3Gnqk3edvO08iqinDaUsg&s",
+      "category": "fries",
+      "type": "loaded",
+      "toppings": ["cheddar cheese", "bacon bits"],
+      "size": "large"
+    },
+    {
+      "id": 13,
+      "name": "Chili Cheese Fries",
+      "price": "$6.99",
+      "image": "https://images.ctfassets.net/hhv516v5f7sj/7oicZUIjczoHLVEApp2ukR/1e2bef456731195c3c721f809b05c2ea/chilicheesefries_1000x1000.jpg",
+      "category": "fries",
+      "type": "loaded",
+      "toppings": ["chili", "cheese", "onions"],
+      "size": "large"
+    },
+    {
+      "id": 14,
+      "name": "Garlic Parmesan Fries",
+      "price": "$5.49",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIc8vmtVVc4_Wt3eZyIVgqoWlD1pOhGD7O8g&s",
+      "category": "fries",
+      "type": "seasoned",
+      "seasoning": "garlic parmesan",
+      "size": "medium"
+    },
+    {
+      "id": 15,
+      "name": "Sweet Potato Fries",
+      "price": "$4.99",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnvMyB0aJpiYhTo6XkRps_iJicWzMXZn8eMA&s",
+      "category": "fries",
+      "type": "sweet",
+      "size": "medium",
+      "seasoning": "cinnamon sugar"
+    }
+  ],
+  "comboMeals": [
+    {
+      "id": 1,
+      "name": "Classic Combo",
+      "price": "$12.99",
+      "image": "https://www.yourcentralvalley.com/wp-content/uploads/sites/54/2025/01/Classic-Combo.jpg?w=900",
+      "includes": [
+        "Classic Cheeseburger",
+        "Regular Fries",
+        "Soft Drink (Medium)"
+      ],
+      "calories": 950,
+      "tags": ["best-seller", "value"]
+    },
+    {
+      "id": 2,
+      "name": "Bacon Lover's Combo",
+      "price": "$14.99",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCTSNXmbhpIooorDEYZ3welr-mUao_7drmug&s",
+      "includes": [
+        "Bacon Double Cheeseburger",
+        "Bacon Cheese Fries",
+        "Soft Drink (Large)"
+      ],
+      "calories": 1200,
+      "tags": ["premium", "high-protein"]
+    },
+    {
+      "id": 3,
+      "name": "Spicy Combo",
+      "price": "$13.49",
+      "image": "https://cdn.uengage.io/uploads/18085/image-186359-1713783475.jpeg",
+      "includes": [
+        "Spicy Jalapeño Burger",
+        "Cajun Fries",
+        "Iced Tea (Large)"
+      ],
+      "calories": 1100,
+      "tags": ["spicy", "bold-flavor"]
+    },
+    {
+      "id": 4,
+      "name": "Veggie Delight Combo",
+      "price": "$11.99",
+      "image": "https://cdn.dotpe.in/longtail/item_thumbnails/9145870/ZR9HRAlq-400-400.webp",
+      "includes": [
+        "Black Bean Veggie Burger",
+        "Sweet Potato Fries",
+        "Lemonade (Medium)"
+      ],
+      "calories": 850,
+      "tags": ["vegetarian", "healthy"]
+    }
+  ]
 
 }
