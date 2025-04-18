@@ -1,6 +1,6 @@
 {
   "hotBeverages": [
-    // ===== Hot Coffee (6 items) =====
+
     {
       "id": 1,
       "name": "Black Coffee",
@@ -62,7 +62,6 @@
       "caffeine": "medium"
     },
 
-    // ===== Hot Tea (5 items) =====
     {
       "id": 7,
       "name": "Earl Grey",
@@ -114,7 +113,7 @@
       "caffeine": "none"
     },
 
-    // ===== Hot Chocolate (3 items) =====
+ 
     {
       "id": 12,
       "name": "Classic Hot Chocolate",
@@ -137,13 +136,13 @@
       "id": 14,
       "name": "Spiced Mexican Hot Chocolate",
       "price": "$4.00",
-      "https://www.theendlessmeal.com/wp-content/uploads/2023/11/spicy-hot-chocolate-2-500x500.jpg",
+      "image":"https://www.theendlessmeal.com/wp-content/uploads/2023/11/spicy-hot-chocolate-2-500x500.jpg",
       "category": "hot-chocolate",
       "description": "With cinnamon and chili powder",
       "sizes": ["12oz"]
     },
 
-    // ===== Specialty Drinks (3 items) =====
+  
     {
       "id": 15,
       "name": "Golden Milk",
@@ -174,7 +173,7 @@
       "alcoholic": true
     },
 
-    // ===== Seasonal (3 items) =====
+   
     {
       "id": 18,
       "name": "Pumpkin Spice Latte",
@@ -207,7 +206,7 @@
     }
   ],
 "refreshments":[
-       // ===== Cold Drinks (5 items) =====
+      
        {
         "id": 1,
         "name": "Sparkling Water",
@@ -254,7 +253,7 @@
         "flavor": ["sweet", "carbonated"]
       },
   
-      // ===== Hot Drinks (5 items) =====
+     
       {
         "id": 6,
         "name": "Hot Chocolate",
@@ -301,7 +300,7 @@
         "flavor": ["spiced", "earthy"]
       },
   
-      // ===== Smoothies (5 items) =====
+     
       {
         "id": 11,
         "name": "Berry Blast Smoothie",
@@ -348,7 +347,7 @@
         "flavor": ["acai", "berry"]
       },
   
-      // ===== Alcoholic Beverages (5 items) =====
+ 
       {
         "id": 16,
         "name": "Craft Beer (Local)",
@@ -365,7 +364,7 @@
         "image": "https://www.ocean-glassware.com/wp-content/uploads/2020/05/house-wine-5.jpg",
         "category": "alcoholic",
         "type": "wine",
-        "flavor": ["red" or "white"]
+        "flavor": ["red or white"]
       },
       {
         "id": 18,
@@ -396,7 +395,7 @@
       }
 ],
 "desserts" : [
-      // ===== Cakes (5 items) =====
+     
    {
        "id": 1,
        "name": "Chocolate Fudge Cake",
@@ -443,7 +442,7 @@
        "flavor": ["chocolate", "cherry"]
      },
  
-     // ===== Pastries (5 items) =====
+    
      {
        "id": 6,
        "name": "Butter Croissant",
@@ -490,7 +489,7 @@
        "flavor": ["cinnamon"]
      },
  
-     // ===== Cookies (5 items) =====
+   
      {
        "id": 11,
        "name": "Chocolate Chip Cookies",
@@ -537,7 +536,7 @@
        "flavor": ["chocolate"]
      },
  
-     // ===== Ice Cream (5 items) =====
+
      {
        "id": 16,
        "name": "Vanilla Bean Ice Cream",
@@ -584,7 +583,7 @@
        "flavor": ["nutty"]
      },
  
-     // ===== Chocolate (5 items) =====
+    
      {
        "id": 21,
        "name": "Dark Chocolate Truffles",
@@ -632,7 +631,7 @@
      }
    ],
    "coldBeverages": [
-    // ===== Coffee (5 items) =====
+   
     {
       "id": 1,
       "name": "Iced Americano",
@@ -684,7 +683,7 @@
       "caffeine": "medium"
     },
 
-    // ===== Tea (5 items) =====
+  
     {
       "id": 6,
       "name": "Iced Matcha Latte",
@@ -735,8 +734,6 @@
       "sizes": ["16oz"],
       "flavors": ["original", "taro", "brown sugar"]
     },
-
-    // ===== Juice (4 items) =====
     {
       "id": 11,
       "name": "Fresh Orange Juice",
@@ -774,7 +771,6 @@
       "sizes": ["16oz"]
     },
 
-    // ===== Soda/Fizzy (3 items) =====
     {
       "id": 15,
       "name": "Craft Cola",
@@ -803,7 +799,6 @@
       "sizes": ["12oz"]
     },
 
-    // ===== Specialty (3 items) =====
     {
       "id": 18,
       "name": "Horchata",
@@ -833,7 +828,7 @@
     }
   ],
   "burgerFriesMenu": [
-        // ===== Specialty Burgers (5 items) =====
+        
     {
       "id": 6,
       "name": "Avocado Turkey Burger",
@@ -885,7 +880,7 @@
       "combo": false
     },
 
-    // ===== French Fries (5 items) =====
+   
     {
       "id": 11,
       "name": "Classic Fries",
